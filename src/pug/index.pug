@@ -23,19 +23,19 @@ html(lang="en")
                             a(href='mailto:aroraabhay@icloud.com')
                                 img(src='assets/img/mail.png')
                                 | aroraabhay@icloud.com
-                            a(href='tel:+919478478470')
+                            a(href='tel:+660806454825')
                                 img(src='assets/img/call.png')
-                                | (+91) 9 478 478 470
+                                | (+66) 080 645 4825
                         .intro.fw.fl
                             ul.journey
                                 li
-                                    .milestone Freelancing
-                                li
-                                    .milestone Startup
+                                    .milestone XenonStack
                                 li
                                     .milestone Infosys
                                 li
-                                    .milestone Datalicious
+                                    .milestone Equifax
+                                li
+                                    .milestone Agoda
                                 li
                                     .milestone Your Team
                             p My idea of profession is to work for my passion. My passion for innovation, passion for technology, and yes passion for business co-define the terms on which I live.
@@ -50,46 +50,43 @@ html(lang="en")
                                 .sub-section
                                     span.title Language
                                     ul.tags
-                                        li.pro Python
-                                        li.int Golang
+                                        li.int Python
+                                        li.pro Golang
                                         li Scala
                                         li.int Javascript
                                         li C
                                 .sub-section
                                     span.title Framework &amp; Utility
                                     ul.tags
-                                        li.pro Spark
+                                        li.pro Kafka
+                                        li.int Spark
                                         li Apache Beam
                                         li.int Hadoop
-                                        li.int Kafka
-                                        li.pro Scrapy
-                                        li React.js
-                                        li.pro Flask
-                                        li D3.js
+                                        li.pro Schema Registry
+                                        li.int Protobuf
+                                        li.pro gRPC
                                 .sub-section
                                     span.title Storage &amp; Search
                                     ul.tags
                                         li.pro PostgreSQL
                                         li.int Elasticsearch
                                         li.int BigQuery
-                                        li.pro MongoDB
+                                        li.int MongoDB
                                         li.pro MySQL
-                                        li.pro HBase
-                                        li SolR
-                                        li TitanDB
+                                        li.int HBase
                                 .sub-section
                                     span.title Workflow &amp; Infrastructure
                                     ul.tags
-                                        li.int Docker
-                                        li.pro Google Cloud
-                                        li Kubernetes
+                                        li.pro Docker
+                                        li.int Microservices
+                                        li.int Kubernetes
                                         li.pro Ansible
+                                        li Envoy
+                                        li Service Mesh
                                         li Jenkins
                                         li.pro Git
+                                        li.pro Google Cloud
                                         li.int AWS
-                                        li Slack
-                                        li Shell Scripting
-                                        li JIRA
                         
                         section#interests.section
                             h3.head Areas of Interest
@@ -97,10 +94,10 @@ html(lang="en")
                                 #interests-chart
                                 .interests
                                     ul.tags
-                                        li.pro Blockchain
-                                        li.int Smart Contracts
-                                        li Bots & AI
-                                        li.pro IoT Solutions
+                                        li.pro Microservices & Service Mesh
+                                        li.int Bots & Automation
+                                        li.pro DevOps
+                                        li.int IoT Solutions
 
                     .split-right.fl
 
@@ -110,21 +107,37 @@ html(lang="en")
                                 .timeline
                                     .row
                                         .time
-                                            .t Oct'17 - Present
+                                            .t Dec'18 - Present
+                                            .td Data Engineer
+                                            .loc Bangkok, TH
+                                        .event
+                                            .e Agoda Pvt. Ltd.
+                                            .ec Agoda is a global online travel agency for hotels, vacation rentals, flights and airport transfer. As a part of data platform team; I am responsible for implementing data pipelines, solutions and products that allows Agoda to collect and process trillions of events every day. 
+                                            ul.tags
+                                                li.pro Apache Kafka
+                                                li.int Elasticsearch
+                                                li.pro Golang
+                                                li gRPC
+                                                li.int Docker
+                                                li.int Ansible
+                                                li Envoy
+                                                li Protobuf
+                                    .row
+                                        .time
+                                            .t Oct'17 - Nov'18
                                             .td Data Engineer
                                             .loc Bengaluru, IN
                                         .event
                                             .e Datalicious Pty. Ltd.
-                                            .ec Datalicious offers various products and services in  marketing attribution, web analytics and data science. My job here is to build, administer and scale data collector and data pipelines that capture and process millions of events a day.
+                                            .ec Datalicious offers various products and services in  marketing attribution, web analytics and data science. My job here was to build and administer a scalable data collector and data pipelines that capture and process millions of events a day.
                                             ul.tags
-                                                li.pro Google Dataflow
-                                                li.int Apache Beam
-                                                li.pro BigQuery
+                                                li.int Google Anaytics
+                                                li.int Facebook Multi-touch Attribution
+                                                li.pro Apache Beam
                                                 li Kubernetes
+                                                li.pro BigQuery
                                                 li.int Docker
                                                 li.int Golang
-                                                li.pro Python
-                                                li Ansible
                                     .row
                                         .time
                                             .t Oct'16 - Oct'17
@@ -140,7 +153,6 @@ html(lang="en")
                                                 li.pro Google Maps
                                                 li.pro Python
                                                 li.int Javascript
-                                                li Oracle DB
                                                 li.int GeoJSON
                                                 li Neo4J
                                     .row
@@ -163,10 +175,9 @@ html(lang="en")
                                                 li.pro PostgreSQL
                                                 li.pro HBase
                                                 li.int Elasticsearch
-                                                li SolR
                                                 li Scala
                                                 li.pro Scrapy
-                                    .row
+                                    .row.no-print
                                         .time
                                             .t Oct'12 - May'14
                                             .td Freelancer
@@ -217,6 +228,10 @@ html(lang="en")
                     .content
                         .portfolio
                             .project
+                                .p Automated Maintenance for Kafka & Swarm clusters
+                                .c Agoda Pvt. Ltd.
+                                .d Kafka clusters at Agoda collectively observe a trillion messages every day; an auditing system runs on Docker swarm. Hardware/software failures and scheduled maintenance are part of our day to day operations. I initiated the process and helped the team to automate maintenance activities using Ansible, AWX and Slack. 
+                            .project
                                 .p Web Analytics Data Collector
                                 .c Datalicious Pty. Ltd.
                                 .d Datalicious helps optimizing digital media spend and campaigns. To ensure all possible touch points are captured; we have our own web analytics tracker and a data collector. As number clients increased; the response time of data collector went beyond SLA limits. I re-wrote the legacy program in Golang and deployed in multiple regions to keep TTFB less than 50ms.
@@ -236,7 +251,7 @@ html(lang="en")
                                 .p Dynamic pricing for storage business
                                 .c SRP Systems Inc.
                                 .d Worked with SRP Systems team to build dynamic pricing model for storage business. Lead the team as a technology partner for implementation of solution designed by Dr. Raju Penmatcha; founder of SRP Systems and a great data scientist
-                            .project
+                            .project.no-print
                                 .p PNI Maps (Prototype)
                                 .c Infosys Ltd.
                                 .d Developed a prototype to demonstrate how javascript can be used to render spatial data and manipulate directly on map. Implementation of proposed solution could reduce the usage proprietary softwares by a large part of team and hence, can save considerable cost of licens
@@ -257,7 +272,7 @@ html(lang="en")
                                         p Male . January 25, 1994
                                     .a
                                         b Current Location
-                                        p Bengaluru, Karnataka, India
+                                        p Bangkok, Thailand
                         
                     .split-right.fl
                         section#education.section
@@ -294,9 +309,9 @@ html(lang="en")
                                 a(href='mailto:aroraabhay@icloud.com')
                                     img(src='assets/img/mail.png')
                                     | aroraabhay@icloud.com
-                                a(href='tel:+919478478470')
+                                a(href='tel:+660806454825')
                                     img(src='assets/img/call.png')
-                                    | (+91) 9 478 478 470
+                                    | (+66) 080 645 4825
                                 a(target='blank', href='https://github.com/BzFTMxc')
                                     img(src='assets/img/gh.png')
                                     | https://github.com/BzFTMxc
